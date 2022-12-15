@@ -1,3 +1,22 @@
+
+body{
+  margin: 0px;
+  background-color: #E4E4E4;
+  font-family: -apple-system, 'Ubuntu', sans-serif;
+}
+
+h2{
+  margin: 0px;
+}
+
+h1{
+  margin: 0px;
+}
+
+p{
+  margin: 0px;
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +45,55 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.General{
+  background-color: #F39237;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.General-container{
+  text-align: left;
+  color: white;
+}
+
+.Address-Container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.General .Address-Container input{
+  text-align: right;
+}
+
+.General-container p{
+  font-size: 18px;
+}
+
+.General-container input{
+  font-family: -apple-system, 'Ubuntu', sans-serif;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.General-container .H1-input{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.General-container .H2-input{
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 @keyframes App-logo-spin {
