@@ -2,6 +2,7 @@ import React from "react";
 import GeneralField from "./GeneralField";
 
 class General extends React.Component {
+  
   render() {
     return <div className="General">
               <div className="General-container">

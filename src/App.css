@@ -3,6 +3,7 @@ body{
   margin: 0px;
   background-color: #E4E4E4;
   font-family: -apple-system, 'Ubuntu', sans-serif;
+  min-height: 100vh;
 }
 
 h2{
@@ -17,7 +18,16 @@ p{
   margin: 0px;
 }
 
+label{
+  width: fit-content;
+}
+
+#root{
+  height: 100%;
+}
+
 .App {
+  height: 100%;
   text-align: center;
 }
 
@@ -44,7 +54,7 @@ p{
 }
 
 .App-link {
-  color: #61dafb;
+  color: #596475;
 }
 
 .General{
@@ -53,6 +63,229 @@ p{
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
+}
+
+.Content{
+  height: 100%;
+  width: 100%;
+  color: #1F2232;
+}
+
+.Content-container{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+  background-color: white;
+  min-height: 40vh;
+  padding: 1px 0px;
+}
+
+.Content-container hr{
+  margin: 10px 10px;
+  border: 1px dashed #E4E4E4;
+}
+
+.Content-container h1{
+  text-align: left;
+  margin: 10px;
+}
+
+.Education-content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.content-not-editing{
+  width: 100%;
+  height: 100%;
+}
+
+.content-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px 60px;
+  margin: 0px 10px;
+  
+}
+
+.education{
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #E4E4E4;
+  color: black;
+}
+
+.education h2{
+  font-size: 22px;
+}
+
+.education-left{
+  display: flex;
+  flex-direction: column;
+}
+
+.education-dates{
+  display: flex;
+  gap: 10px;
+}
+
+.education-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.education-degree{
+  font-weight: bold;
+}
+
+.experience{
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #E4E4E4;
+  color: black;
+}
+
+.experience h2{
+  font-size: 22px;
+}
+
+.experience-left{
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-dates{
+  display: flex;
+  gap: 10px;
+}
+
+.experience-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-role{
+  font-weight: bold;
+}
+
+.education-edit{
+  width: fit-content;
+  height: 100%;
+  text-align: center;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: fit-content;
+}
+
+.double-field{
+  display: flex;
+  margin: 10px;
+  gap: 25px;
+}
+
+.double-field input{
+  width: 50px;
+  margin-top: 5px;
+  padding: 2px;
+  font-size: 16px;
+}
+
+.field input{
+  width: 30%;
+  min-width: 200px;
+  margin-top: 5px;
+  padding: 2px;
+  font-size: 16px;
+}
+
+.sub-field{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.btn-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.btn-wrapper button:hover i{
+  color: black;
+}
+
+.btn-wrapper .add-btn{
+  background-color: #F39237;
+  padding: 5px 10px;
+  border-radius: 50px;
+  align-self: center;
+  justify-self: center;
+}
+
+.btn-wrapper .close-btn{
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  align-self: center;
+  justify-self: center;
+}
+
+.add-btn i{
+  color: white;
+}
+
+.Education-content button{
+  align-self: center;
+  justify-self: center;
+  background-color: transparent;
+  border: none;
+  font-size: 28px;
+  margin: 20px 0px;
+  color: #1F2232;
+}
+.Education-content button:hover{
+  cursor: pointer;
+  color: #596475;
+}
+
+.Experience-content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.Experience-content button{
+  align-self: center;
+  background-color: transparent;
+  border: none;
+  font-size: 28px;
+  margin: 20px 0px;
+  color: #1F2232;
+}
+.Experience-content button:hover{
+  cursor: pointer;
+  color: #596475;
 }
 
 .General-container{
